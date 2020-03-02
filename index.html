@@ -14,7 +14,17 @@
 <body>
     <header>
         <nav class="menu">
-            <ul>
+            <div class="header">
+                <a href="index.html" class="mobile-logo">Blueprint</a>
+                <input type="checkbox" class="menu-btn" id="menu-btn" />
+                <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
+                <ul class="checkbox-menu">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="Reservation.html">Reservation</a></li>
+                </ul>
+            </div>
+            <ul id="menu-nav">
                 <li class="dropdown-menu"><a href="menu.html" class="dropdown">Menu</a>
                     <div class="dropdown-content">
                         <a href="./menu.html#coffee-section">Coffee</a>
@@ -29,8 +39,8 @@
         </nav>
     </header>
     <section class="introduction">
-        <span class="restaurant-name">Blueprint</span>
-        <p class="restaurant-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum provident quis laborum amet minus beatae fugit, consectetur excepturi labore.</p>
+        <span class="restaurant-name">Blueprint</span><br><br><br><br>
+        <span class="restaurant-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum provident quis laborum amet minus beatae fugit, consectetur excepturi labore.</span>
     </section>
     <section class="news-events">
         <div class="news-events-left">
