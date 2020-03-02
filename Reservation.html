@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.css">
+    <title>Reservation - Blueprint Café</title>
+</head>
+<body class="reservation-page">
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="title-name">Blueprint</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about-us.html">About Us </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="black-space" id="about-us-header">
+        <h1>Blueprint <sup class="menu-title">Reservation</sup></h1>
+    </section>
+    <main class="reservation-body">
+        <section class="reservation-body-header">
+            <div class="reserve-body">
+                <h2>Book The Place</h2>
+                <div class="separator"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, commodi.</p>
+            </div>
+        </section>
+        <form class="reservation-form">
+            <fieldset>
+                <legend>Reservation Form</legend>
+                <div class="reservation-information">
+                    <div class="reservation-field">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="reservation-field">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="johndoe@email.com">
+                    </div>
+                    <div class="reservation-field">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="text" name="phonenumber" id="phonenumber" placeholder="123-4567">
+                    </div>
+                </div>
+                <div class="reservation-information">
+                    <div class="reservation-field">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="reservation-field">
+                        <label for="time">Time</label>
+                        <select class="date-dropdown">
+                            <option value="time-selection">10:00</option>
+                            <option value="time-selection">11:00</option>
+                            <option value="time-selection">12:00</option>
+                            <option value="time-selection">13:00</option>
+                            <option value="time-selection">14:00</option>
+                            <option value="time-selection">15:00</option>
+                            <option value="time-selection">16:00</option>
+                            <option value="time-selection">17:00</option>
+                            <option value="time-selection">18:00</option>
+                            <option value="time-selection">19:00</option>
+                            <option value="time-selection">20:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="reservation-notes">
+                    <label for="notes">Special Requests</label>
+                    <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Enter text here"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </fieldset>
+        </form>
+        <section class="menu-bottom-page" id="bottom-page">
+            <div class="line-separator"></div>
+            <div class="information">
+                <span class="hours">
+                    <span>Monday-Friday: 10:00 - 23:00 </span>
+                    <span>Saturday: 09:00 - 23:00</span>
+                    <span>Sunday: 12:00 - 20:00</span>
+                    <span>National Holidays: Closed!</span>
+                </span>
+                <span class="locate">
+                    <span class="address">4305 Blueprint Avenue, Toronto, Ontario M4P 1A6</span>
+                    <span class="contact-number">(123) 345-6789</span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
