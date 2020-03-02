@@ -18,6 +18,10 @@ header{
     width: 100%;
 }
 
+.header{
+    display: none;
+}
+
 .dropdown{
     color: black;
     padding:10px;
@@ -61,6 +65,12 @@ header{
 .menu{
     height: 7vh;
     background: rgba(177, 177, 177, 0.7);
+    display: flex;
+    justify-content: center;
+}
+
+.burger-dropdown{
+    display: none;
 }
 
 .menu ul{
@@ -332,7 +342,6 @@ header{
 .Coffee{
     height: 100%;
     width: 100%;
-    margin: auto;
     display: grid;
     grid-row-gap: 10px;
 }
@@ -379,13 +388,6 @@ header{
     font-size: 40px;
 }
 
-.everyday-coffee-information{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding: 80px;
-}
 
 .basics ul{
     list-style: none;
@@ -425,16 +427,8 @@ header{
     font-size: 40px;
 }
 
-.house-special-information{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding: 80px;
-}
 
 .house-special-name{
-    flex: 1;
     display: grid;
     grid-row-gap: 20px;
 }
@@ -493,20 +487,12 @@ header{
     padding: 40px;
 }
 
-.seasonal-special-information{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    padding: 80px;
-}
 
 .seasonal-special-title{
     font-size: 40px;
 }
 
 .seasonal-special-name{
-    flex: 1;
     display: grid;
     grid-row-gap: 20px;
 }
@@ -1163,6 +1149,10 @@ legend{
     padding: 10px;
 }
 
+.ratings-mobile{
+    display: none;
+}
+
 .ratings input{
     margin: 0 20px;
 }
@@ -1174,4 +1164,338 @@ legend{
 .comments textarea{
     height: 300px;
     width: 800px;
+}
+
+@media screen and (max-width: 1024px){
+    .bottom-page-info{
+        height: 20vh;
+    }
+
+    .header{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .bottom-page-info{
+        display: grid;
+        background: none;
+        grid-row-gap: 20px;
+    }
+
+    .others-information{
+        margin-top: 40px;
+    }
+
+    .opening-hours-info{
+        margin-top: 50px;
+    }
+
+    .address-number-social{
+        margin-top: 20px;
+    }
+
+    .our-story{
+        width: 100%;
+    }
+
+    .our-information{
+        width: 100%;
+    }
+
+    .black-space{
+        width: 80%;
+        margin: auto;
+    }
+
+    .reservation-body-header{
+        width: 60%;
+        margin: auto;
+    }
+
+    .reservation-information{
+        display: grid;
+        grid-row-gap: 10px;
+    }
+
+    .available-position{
+        width: 100%;
+    }
+
+    .survey-form{
+        width: 60%;
+        margin: auto;
+    }
+
+    .ratings{
+        display: none;
+    }
+
+    .ratings-mobile{
+        align-items: center;
+        display: block;
+        padding: 20px;
+    }
+
+    .comments textarea{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .black-space h1{
+        font-size: 5em;
+    }
+
+
+    .menu-title{
+        font-size: 0.5em;
+    }
+
+    .survey-information{
+       display: grid;
+       grid-row-gap: 20px;
+    }
+
+    .survey-field{
+        display: grid;
+        grid-row-gap: 10px;
+    }
+    
+    #menu-nav{
+        display: none;
+    }
+
+    .header{
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        height: 50vh;
+    }
+    .header ul{
+        list-style: none;
+        overflow: hidden;
+    }
+
+    .checkbox-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+    }
+
+    .checkbox-menu li{
+        padding: 20px;
+        width: 100%;
+        outline: 1px solid black;
+        border-right: 1px solid black;
+        text-decoration: none;
+    }
+
+    .header .mobile-logo{
+        float: left;
+        display: block;
+        font-size: 1.5em;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-family: 'Satisfy', cursive;
+        background: linear-gradient(354deg, #a75451, #9c0a27);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .checkbox-menu li:hover{
+        background-color: lightgrey;
+    }
+
+    .header .checkbox-menu{
+        clear: both;
+        max-height: 0;
+        transition: max-height 0.3s;
+    }
+
+    .header .menu-icon{
+        padding: 25px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+    }
+
+    .header .menu-icon .nav-icon{
+        background: black;
+        display: block;
+        height: 3px;
+        width: 25px;
+        position: relative;
+        transition: background 0.3s;
+    }
+
+    .header .menu-icon .nav-icon:before{
+        background: black;
+        content:"";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 7px;
+    }
+
+    .header .menu-icon .nav-icon:after{
+        background: black;
+        content:"";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all 0.3s;
+        top: -7px;
+    }
+    
+    .header .menu-btn{
+        display: none;
+    }
+    
+    .header .menu-btn:checked ~ .checkbox-menu{
+        max-height: 260px;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .nav-icon{
+        background: none;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .coffee-header, .hot-chocolate-header, .tea-header, .pastries-header{
+        background: rgba(177, 177, 177, 0.7);
+    }
+
+    .full-menu h1{
+        font-size: 2em;
+    }
+
+    .coffee-menu{
+        overflow: auto;
+    }
+
+    .coffee-menu span{
+        overflow: auto;
+    }
+
+    .coffee-header p, .hot-chocolate-header p, .tea-header p, .pastries-header p{
+        display: none;
+    }
+
+    .coffee-menu p{
+        display: none;
+    }
+
+    .house-special-title, .seasonal-special-title{
+        font-size: 1.5em;
+    }
+
+    .coffee-menu h4{
+        font-size: 1em;
+    }
+
+    .tea-selection{
+        overflow: auto;
+    }
+
+    .everyday-coffee-information, .house-special-information, .seasonal-special-information{
+        display: inline-block;
+    }
+
+    .hot-chocolate-names p{
+        display: none;
+    }
+
+    .news-events-left{
+        flex: 1;
+    }
+
+    .news-events-left div{
+        width: 100%;
+    }
+
+    .news-events-right{
+        display: none;
+    }
+
+    .introduction{
+        display: inline-block;
+        padding: 150px 0;
+    }
+    
+    .introduction span{
+        font-size: 5em;
+    }
+
+    .introduction .restaurant-description{
+        font-size: 1em;
+        padding: 20px;
+    }
+
+    .reservation-body-header div{
+        overflow: auto;
+    }
+
+    .reservation-body-header div p{
+        display: none;
+    }
+
+    .our-story{
+        float: left;
+    }
+
+    .available-position, .positions-row{
+        display: grid;
+        margin: 0;
+    }
+
+    .benefits-row{
+        display: grid;
+    }
+
+    .positions-column{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .available-position{
+        padding-bottom: 50px;
+    }
+
+    .tea-selection{ 
+        display: inline-block;
+        padding: 10px;
+    }
+    .tea-names{
+        padding: 10px;
+    }
+
+    .tea-info{
+        font-weight: bold;
+
+    }
+
+    .join-us-now p{
+        display: none;
+    }
+
+    .survey-form{
+        padding-right: 250px;
+    }
+
 }
