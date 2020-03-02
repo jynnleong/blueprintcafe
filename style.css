@@ -399,16 +399,6 @@ header{
     font-size: 20px;
 }
 
-/* .basics-price ul{
-    list-style: none;
-    padding: 10px;
-}
-
-.basics-price ul li{
-    padding: 10px;
-    font-size: 20px;
-} */
-
 .separator{
     height: 4px;
     width: 100%;
@@ -442,43 +432,6 @@ header{
     padding: 25px;
 }
 
-/* .house-special-price{
-    flex: 1;
-
-}
-
-.house-special-price ul{
-    list-style: none;
-}
-
-.house-special-price ul li{
-    padding: 40px;
-}
-
-.hs-price1{
-    transform: translateY(-220%);
-}
-
-.hs-price2{
-    transform: translateY(-190%);
-}
-
-.hs-price3{
-    transform: translateY(-100%);
-}
-
-.hs-price4{
-    transform: translateY(10%);
-}
-
-.hs-price5{
-    transform: translateY(105%);
-}
-
-.hs-price6{
-    transform: translateY(170%);
-} */
-
 .seasonal-special{
     display: grid;
     grid-row-gap: 20px;
@@ -504,34 +457,6 @@ header{
 .seasonal-special-name p{
     padding: 25px;
 }
-
-/* .seasonal-special-price{
-    flex: 1;
-}
-
-.seasonal-special-price ul{
-    list-style: none;
-}
-
-.seasonal-special-price ul li{
-    padding: 60px;
-}
-
-.ss-price1{
-    transform: translateY(-50%);
-}
-
-.ss-price2{
-    transform: translateY(-25%);
-}
-
-.ss-price3{
-    transform: translateY(10%);
-}
-
-.ss-price4{
-    transform: translateY(35%);
-} */
 
 .hot-chocolate{
     height: 100%;
@@ -586,30 +511,6 @@ header{
     display: grid;
     grid-row-gap: 70px;
 }
-
-/* .hot-chocolate-price{
-    flex: 1;
-}
-
-.hot-chocolate-price ul{
-    list-style: none;
-}
-
-.hot-chocolate-price ul li{
-    padding: 80px;
-}
-
-.hc-price1{
-    transform: translateY(-23%);
-}
-
-.hc-price2{
-    transform: translateY(-55%);
-}
-
-.hc-price3{
-    transform: translateY(-30%);
-} */
 
 .tea{
     height: 100%;
@@ -705,11 +606,6 @@ header{
 .pastries-name{
     flex: 1;
 }
-
-
-/* .pastries-price{
-    flex: 1;
-} */
 
 .pastries-name ul{
     list-style: none;
